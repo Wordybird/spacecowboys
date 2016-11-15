@@ -2,6 +2,7 @@ require ('pg')
 class SpaceCowboy
 
 attr_accessor :name, :species, :bounty_value, :danger_level
+attr_reader :id
 
   def initialize(params)
     @name=params['name']
